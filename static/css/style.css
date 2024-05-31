@@ -65,11 +65,25 @@ nav ul li a {
     font-size: 14px;
     transition: color 0.3s ease;
     /* atomove.pl */
+    position: relative;
 }
 
-nav ul li a:hover {
-    color: #e74c3c;
-    /* atomove.pl */
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
 }
 
 .container {
@@ -216,7 +230,7 @@ button#joinButton:hover {
     transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
-    max-width: 800px;
+    max-width: 1500px;
     background-size: 200% 200%;
     animation: backgroundAnimation 5s ease infinite;
     /* atomove.pl */
@@ -393,6 +407,31 @@ button#joinButton:hover {
     text-decoration: underline;
 }
 
+/* Link underline animation */
+a {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
 
 .button {
     display: inline-block;
@@ -486,6 +525,102 @@ button#joinButton:hover {
     }
 }
 
+/* Advanced Media Queries */
+@media (max-width: 1400px) {
+    .hero h1 {
+        font-size: 50px;
+    }
+    .hero h3 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .how-to-join-content h2 {
+        font-size: 22px;
+    }
+
+    .call-to-action {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 992px) {
+    .top-banner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero h3 {
+        font-size: 20px;
+    }
+
+    .hero .button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+
+    .how-to-join-content {
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-banner {
+        padding: 10px;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .banner-text {
+        font-size: 14px;
+    }
+
+    nav ul {
+        padding-top: 5px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h3 {
+        font-size: 18px;
+    }
+
+    .hero .button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .faction-item, .offer-item {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .how-to-join-content {
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 576px) {
     .top-banner {
         padding: 5px;
@@ -531,34 +666,6 @@ button#joinButton:hover {
     .call-to-action .button {
         font-size: 18px;
         padding: 10px 20px;
-    }
-}
-
-/* Advanced Media Queries */
-@media (max-width: 1400px) {
-    .hero h1 {
-        font-size: 50px;
-    }
-    .hero h3 {
-        font-size: 22px;
-    }
-}
-
-@media (max-width: 1200px) {
-    .how-to-join-content h2 {
-        font-size: 22px;
-    }
-}
-
-@media (max-width: 992px) {
-    .how-to-join-content {
-        padding: 15px 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .how-to-join-content {
-        max-width: 100%;
     }
 }
 
