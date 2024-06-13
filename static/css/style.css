@@ -5,7 +5,7 @@ body, html {
     height: 100%;
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .top-banner {
@@ -22,12 +22,12 @@ body, html {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .logo-container {
     flex: 1;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .logo {
@@ -37,26 +37,26 @@ body, html {
 .banner-text {
     flex: 2;
     text-align: center;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 nav {
     flex: 1;
     text-align: right;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 nav ul li {
     display: inline;
     margin-left: 20px;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 nav ul li a {
@@ -64,7 +64,7 @@ nav ul li a {
     color: #ecf0f1;
     font-size: 14px;
     transition: color 0.3s ease;
-    /* atomove.pl */
+    /* boxagency.pl */
     position: relative;
 }
 
@@ -89,14 +89,14 @@ nav ul li a:hover::before {
 .container {
     text-align: center;
     margin-top: 60px;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 header {
     position: absolute;
     top: 20px;
     right: 20px;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .hero {
@@ -109,33 +109,33 @@ header {
     color: white;
     text-align: center;
     overflow: hidden;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .hero h1, .hero .button {
     z-index: 1;
     position: relative;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .hero h1 {
     font-size: 60px;
     color: #222;
     margin-bottom: 5px;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .hero h3 {
     font-size: 24px;
     color: #444;
     margin-top: 5px;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .hero .button {
     font-size: 20px;
     padding: 15px 30px;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 canvas#backgroundCanvas {
@@ -145,7 +145,7 @@ canvas#backgroundCanvas {
     width: 100%;
     height: 100%;
     z-index: 0;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 button#joinButton {
@@ -160,13 +160,13 @@ button#joinButton {
     transition: background-color 0.3s ease, transform 0.3s ease;
     z-index: 1;
     position: relative;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 button#joinButton:hover {
     background-color: #6700c7;
     transform: scale(1.05);
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .how-to-join-content {
@@ -180,7 +180,7 @@ button#joinButton:hover {
     margin-left: auto;
     margin-right: auto;
     animation: fadeIn 1s ease-in-out;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .how-to-join-content h2 {
@@ -190,7 +190,7 @@ button#joinButton:hover {
     border-bottom: 2px solid #8200ff;
     padding-bottom: 10px;
     text-transform: uppercase;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .how-to-join-content p {
@@ -200,7 +200,7 @@ button#joinButton:hover {
     line-height: 1.6;
     padding-left: 15px;
     position: relative;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .how-to-join-content p::before {
@@ -210,13 +210,13 @@ button#joinButton:hover {
     left: 0;
     font-size: 20px;
     line-height: 1.6;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .call-to-action {
@@ -230,10 +230,10 @@ button#joinButton:hover {
     transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
-    max-width: 1500px;
+    max-width: 1000px;
     background-size: 200% 200%;
     animation: backgroundAnimation 5s ease infinite;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .call-to-action h2 {
@@ -244,7 +244,7 @@ button#joinButton:hover {
     background: -webkit-linear-gradient(#f4f4f9, #ecf0f1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .call-to-action .button {
@@ -252,21 +252,21 @@ button#joinButton:hover {
     padding: 15px 30px;
     z-index: 2;
     position: relative;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .call-to-action p {
     font-size: 20px;
     margin-bottom: 30px;
     color: #ecf0f1;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .call-to-action strong {
     color: #e74c3c;
     font-weight: bold;
     text-transform: uppercase;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .call-to-action::before {
@@ -280,25 +280,25 @@ button#joinButton:hover {
     transform: rotate(45deg);
     transition: opacity 0.5s ease-in-out;
     opacity: 0;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .call-to-action:hover::before {
     opacity: 1;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .call-to-action:hover {
     transform: scale(1.05);
     background: linear-gradient(135deg, #6700c7 0%, #8200ff 100%);
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 @keyframes backgroundAnimation {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .separator {
@@ -306,7 +306,7 @@ button#joinButton:hover {
     align-items: center;
     justify-content: center;
     margin: 40px 0;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .separator span {
@@ -316,7 +316,7 @@ button#joinButton:hover {
     color: #5c02b1;
     text-transform: uppercase;
     letter-spacing: 2px;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .separator::before,
@@ -325,7 +325,7 @@ button#joinButton:hover {
     flex: 1;
     border-bottom: 2px solid #ddd;
     margin: 0 10px;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .faction-box, .offer-content {
@@ -335,7 +335,7 @@ button#joinButton:hover {
     flex-wrap: wrap;
     gap: 20px;
     padding: 0 20px;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .faction-item {
@@ -351,7 +351,7 @@ button#joinButton:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 250px;
     height: 80px;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .offer-item {
@@ -367,26 +367,26 @@ button#joinButton:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 250px;
     height: 160px;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .faction-item:hover, .offer-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .faction-item span, .offer-item h3 {
     display: block;
     font-size: 24px;
     margin-bottom: 10px;
-    /* atomove.pl */
+    /* boxagency.pl */
 }
 
 .offer-item p, .how-to-join-content p {
     font-size: 16px;
     color: #bdc3c7;
-    /* atomove.pl */
+
 }
 
 .footer {
@@ -407,7 +407,6 @@ button#joinButton:hover {
     text-decoration: underline;
 }
 
-/* Link underline animation */
 a {
     position: relative;
     color: inherit;
